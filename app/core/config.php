@@ -22,4 +22,11 @@ if($_SERVER['SERVER_NAME'] == 'localhost')
     define('DBDRIVER', '');
 }
 
- 
+ define('APP_NAME', "My Website");
+ define('APP_DESC', "i Am batman");
+
+//   true means show errors
+//   by changing this value can show errors or not
+//   true => show error 
+//   false => not show error 
+define('DEBUG', true);

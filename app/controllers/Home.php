@@ -1,21 +1,12 @@
 <?php 
 
-class Home extends Controller
+class Home
 {
-    public function index($a = '')
+    use Controller;
+    public function index()
     {
-        $model = new Model;
-        
-        $arr['user_id'] = 3;
-        $arr['user_name'] = "john";
-        $arr2['user_name'] = "batman";
-
-
-
-        $result = $model->where($arr);
-
-        show($result);
 
         $this->view('home');
     }
+
 }
